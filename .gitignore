@@ -1,0 +1,24 @@
+
+.vs/
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet packages
+**/packages/*
+!**/packages/build/
+
+.vscode/
+
+
+*.accdb
+*.mdb
+*.laccdb
+*.ldb

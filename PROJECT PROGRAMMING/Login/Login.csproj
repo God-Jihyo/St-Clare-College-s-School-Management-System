@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A1C55FD-7EBE-4A6A-A3DE-8B8BFA457567}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Login</RootNamespace>
+    <AssemblyName>Login</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="databasesuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="databasesuccess.Designer.cs">
+      <DependentUpon>databasesuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRADINGSHEET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRADINGSHEET.Designer.cs">
+      <DependentUpon>GRADINGSHEET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gradingsheetprojectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gradingsheetprojectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gradingsheetprojectDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gradingsheetprojectDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="loginmsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginmsg.Designer.cs">
+      <DependentUpon>loginmsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logout.Designer.cs">
+      <DependentUpon>logout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationForm.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchsuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchsuccess.Designer.cs">
+      <DependentUpon>searchsuccess.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databasesuccess.resx">
+      <DependentUpon>databasesuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRADINGSHEET.resx">
+      <DependentUpon>GRADINGSHEET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginmsg.resx">
+      <DependentUpon>loginmsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logout.resx">
+      <DependentUpon>logout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchsuccess.resx">
+      <DependentUpon>searchsuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="gradingsheetprojectDataSet.xsc">
+      <DependentUpon>gradingsheetprojectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gradingsheetprojectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gradingsheetprojectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gradingsheetprojectDataSet.xss">
+      <DependentUpon>gradingsheetprojectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gradingsheetprojectDataSet1.xsc">
+      <DependentUpon>gradingsheetprojectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="gradingsheetprojectDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gradingsheetprojectDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gradingsheetprojectDataSet1.xss">
+      <DependentUpon>gradingsheetprojectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scc school.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\253086512_1298723123913967_3942125833597577958_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-login-google-account-computer-icons-user-activity-5ac6bbe74aa7f1.6157264215229736713058.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cross-mark-button-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-user-logo-information-service-design-5ba34f88e63387.4679724515374293849429.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-hamburger-button-computer-icons-menu-drop-down-lis-5ae5e3a3d0e340.3403257115250154598556.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-rounded-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-folder-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-thursday-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-settings-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1680068773211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1680068303404.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-subject-divider-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-forward-button-90 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1680238321830.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-report-card-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-forward-button-90 %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picsart_23-03-31_12-49-51-549.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rescan-document-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-forward-button-90 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picsart_23-03-31_12-51-15-878.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-subjects-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-forward-button-90 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-forward-button-90 %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-user-logo-information-service-design-5ba34f88e63387.46797245153742938494291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\253086512_1298723123913967_3942125833597577958_n1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-return-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7efs.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-crop.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

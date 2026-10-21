@@ -17,7 +17,7 @@ namespace Login
         public RegistrationForm()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Hachiru\Desktop\gradingsheetproject.mdb;";
+            connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\hachi\Desktop\GAHUM CC103\gradingsheetproject.mdb;";
         }
 
         private void label1_Click(object sender, EventArgs e)

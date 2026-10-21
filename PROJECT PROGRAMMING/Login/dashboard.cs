@@ -13,7 +13,7 @@ namespace Login
 {
     public partial class dashboard : Form
     {
-        private string connectionString = @"Provider =Microsoft.ACE.OLEDB.12.0; Data Source = C:\Users\Hachiru\Desktop\loginusernamepassword.accdb;Persist Security Info=False;";
+        private string connectionString = @"Provider =Microsoft.ACE.OLEDB.12.0; Data Source = C:\Users\hachi\Desktop\GAHUM CC103\loginusernamepassword.accdb;Persist Security Info=False;";
         public dashboard()
         {
             InitializeComponent();

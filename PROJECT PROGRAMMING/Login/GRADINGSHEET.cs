@@ -12,7 +12,7 @@ namespace Login
 {
     public partial class GRADINGSHEET : Form
     {
-        private String ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Hachiru\Desktop\gradingsheetproject.mdb;";
+        private String ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Hachi\Desktop\GAHUM CC103\gradingsheetproject.mdb;";
         public GRADINGSHEET()
         {
             InitializeComponent();

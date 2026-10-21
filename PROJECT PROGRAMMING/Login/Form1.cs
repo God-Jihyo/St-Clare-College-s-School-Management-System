@@ -12,7 +12,7 @@ namespace Login
 {
     public partial class Form1 : Form
     {
-        private string connectionString = @"Provider =Microsoft.ACE.OLEDB.12.0; Data Source = C:\Users\Hachiru\Desktop\loginusernamepassword.accdb;Persist Security Info=False;";
+        private string connectionString = @"Provider =Microsoft.ACE.OLEDB.12.0; Data Source = C:\Users\hachi\Desktop\GAHUM CC103\loginusernamepassword.accdb;Persist Security Info=False;";
         public Form1()
         {
             InitializeComponent();
